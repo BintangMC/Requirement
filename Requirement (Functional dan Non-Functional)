@@ -1,0 +1,20 @@
+Proyek: Peminjaman buku perpustakaan
+
+Functional Requirement:
+ - Admin dapat menambah dan mengurangi data buku dalam perpustakaan
+ - Admin dapat meminjamkan buku kepada pengunjung (sistem secara otomatis mengubah data buku yang tersedia dan menentukan waktu pengembalian buku)
+ - Admin dapat menerima kembali buku yang dipinjam (sistem secara otomatis mengubah data buku dan menentukan denda berdasarkan waktu pengembalian) 
+ - Admin dapat menambah dan mengurangi data anggota perpustakaan
+ - Admin dapat melihat data peminjaman buku
+ 
+Non-Functional Requirement:
+ - Keamanan
+    + Admin hanya bisa menggunakan aplikasi setelah memasukkan master user dan password
+	+ Seluruh data buku dan anggota perpustakaan disimpan dalam database
+
+ - Tampilan
+    + Tidak menampilkan data buku d  an anggota di halaman yang sama
+	+ Hanya ada satu halaman
+	
+ - Database
+    + Catatan peminjaman yang sudah dikembalikan dan berusia lebih dari satu tahun akan dihapus
